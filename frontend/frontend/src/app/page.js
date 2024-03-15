@@ -1,10 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Layout from "@/components/Sidebar/layout"
+import Layout from "@/layout";
+import Navbar from "@/components/Navbar/Navbar";
 
-export default function Home({Component , pageProps}) {
+export default function Home({ Component, pageProps }) {
   return (
-    <Layout>
-    </Layout>
+    <>
+      {/* <Navbar /> */}
+      <Layout></Layout>
+    </>
   );
 }

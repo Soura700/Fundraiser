@@ -1,5 +1,6 @@
 import Sidebar from "./Sidebar";
 import styles from  "../../styles/sidebar.module.css";
+import Navbar from "../Navbar/Navbar";
 
 const Layout = ({ children }) => {
   return (

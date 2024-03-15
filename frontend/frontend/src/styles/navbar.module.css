@@ -1,0 +1,111 @@
+/* navbar.module.css */
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    gap: 6px;
+  }
+  
+  /* Search bar */
+  .search-bar {
+    display: flex;
+    flex: 1;
+    max-width: 458px;
+    padding: 2px 4px;
+    height: 52px;
+    background-color: #1c1c24;
+    border-radius: 100px;
+  }
+  
+  .search-bar input[type="text"] {
+    flex: 1;
+    width: 100%;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: transparent;
+    outline: none;
+    padding-left: 10px; /* Adjust as needed */
+    padding-right: 10px; /* Adjust as needed */
+  }
+  
+  /* Search button */
+  .search-button {
+    width: 72px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #4acd8d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Small screen navigation */
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .mobile-nav .menu-icon {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+  }
+  
+  /* Drawer */
+  .drawer {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    background-color: #1c1c24;
+    z-index: 10;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 16px;
+    transform: translateY(-100vh);
+    transition: all 0.7s;
+  }
+  
+  .drawer.open {
+    transform: translateY(0);
+  }
+  
+  /* Nav links */
+  .nav-links {
+    margin-bottom: 4px; /* Adjust as needed */
+  }
+  
+  .nav-links li {
+    padding: 16px;
+    cursor: pointer;
+  }
+  
+  .nav-links li:hover {
+    background-color: #3a3a43;
+  }
+  
+  .nav-links li img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  
+  .nav-links li.active {
+    background-color: #3a3a43;
+  }
+  
+  .nav-links li p {
+    margin-left: 20px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #1dc071;
+  }
+  
