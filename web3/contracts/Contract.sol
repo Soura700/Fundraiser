@@ -77,4 +77,3 @@ contract CrowdFunding{
         thisRequest.completed=true;
     }
 }
-
